@@ -1,6 +1,7 @@
 import '../../../../domain/entities/product.dart';
 
 class ProductModel extends Product {
+
   const ProductModel({
     required super.id,
     required super.name,
@@ -8,6 +9,7 @@ class ProductModel extends Product {
     required super.imageUrl,
     required super.price,
   });
+
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
@@ -18,6 +20,7 @@ class ProductModel extends Product {
       price: (json['price'] as num).toDouble(),
     );
   }
+
 
   Map<String, dynamic> toJson() {
     return {
