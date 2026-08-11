@@ -1,14 +1,9 @@
-import '../../../features/ecommerce/data/models/product_model.dart';
-
+import '../../features/ecommerce/data/models/product_model.dart';
 
 abstract class ProductLocalDataSource {
+  Future<void> cacheProducts(List<ProductModel> products);
 
   Future<List<ProductModel>> getCachedProducts();
 
-  Future<void> saveProducts(
-      List<ProductModel> products
-  );
-
-  Future<void> deleteProduct(String id);
-
+  Future<ProductModel> getCachedProduct(String id);
 }

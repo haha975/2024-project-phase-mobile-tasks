@@ -1,4 +1,4 @@
-import '../../../features/ecommerce/data/models/product_model.dart';
+import '../../features/ecommerce/data/models/product_model.dart';
 
 abstract class ProductRemoteDataSource {
 
